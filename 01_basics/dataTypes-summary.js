@@ -36,6 +36,24 @@ console.log(typeof(myObj))   //prints object
 
 console.log(typeof(heros))   //prints object
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+//Stack(Primitive)  Heap(Non-Primitive) 
 
-  
+let youTube = "hiteshdotcom"
+let name = youTube
+name = "hitesh"
+
+console.log(name)  // as in primitive which is stored in stack copies the element
+
+let userOne = {
+    email: "user@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "meghannumh@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
