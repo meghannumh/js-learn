@@ -68,6 +68,6 @@ console.log(instructor); //prints hitesh //destructuring object
 
 // {
 //     "name": "hitessh",
-//     "courseName": "js in hindi",    //json
+//     "courseName": "js in hindi",    //json(javascript object notation)
 //     "price":"99"
 // }
