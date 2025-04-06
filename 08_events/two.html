@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(()=>{
+    //     console.log("meghana")
+    // }, 2000);
+    //prints meghana after 2 seconds
+
+
+    const changeText = () => {
+        const htag = document.querySelector('h1');
+        htag.innerHTML = 'Best JS Series';
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+    
+   document.querySelector('#stop').addEventListener('click', ()=>{
+    clearTimeout(changeMe);
+   })
+
+   //clear timeOut do not let the value change thatt is  stops settimeout at the event when stop is clicked
+
+   
+    
+</script>
+</html>
