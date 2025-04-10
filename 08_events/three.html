@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setInterval(() => {
+    //     console.log('Meghana', Date.now());
+    // }, 1000);
+    // Prints Meghana, date after every second.
+
+    const start = document.querySelector('#start');
+    const stop = document.querySelector('#stop');
+    let intervalEnd;
+    const sayDate = (str)=>{
+        console.log(str, Date.now());
+    }
+    start.addEventListener('click', ()=>{
+        intervalEnd = setInterval(sayDate, 1000, "Hi");
+    })
+
+    stop.addEventListener('click',()=>{
+        clearInterval(intervalEnd);
+    })
+    
+    //Prints hi, date after every interval of time here we have also ggiven a third parameter which says hi which will be passed to callback
+
+
+</script>
+</html>
